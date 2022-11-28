@@ -1,7 +1,11 @@
+import { Buttons } from "../components/Buttons";
+
 export function CustomHooks() {
   return (
     <>
-      <h1>CustomHooks</h1>
+      <div className="container max-w-none">
+        <Buttons />
+      </div>
     </>
   );
 }

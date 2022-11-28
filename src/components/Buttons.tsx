@@ -2,6 +2,10 @@ export function Buttons() {
   return (
     <>
       <div className="container mx-auto">
+        <div className="mt-3 text-center text-accent text-5xl">
+          <h1>Testing CSS Plugins</h1>
+        </div>
+
         <div className="grid gap-2 grid-cols-3 mt-2 mb-2 p-4">
           <button className="btn btn-primary">Button - PRIMARY</button>
           <button className="btn btn-primary btn-outline">Button</button>
