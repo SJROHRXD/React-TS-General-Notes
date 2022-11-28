@@ -5,3 +5,7 @@
 @tailwind utilities;
 
 /* this might need to be in like index.css or main or idk */
+body {
+  background-color: #191a3e;
+  min-height: 100vh;
+}
