@@ -6,32 +6,36 @@ export function Navbar() {
       <div className="navbar bg-base-100">
         <Link to="/">
           <div className="">
-            <a className="btn btn-ghost normal-case text-sm">Home</a>
+            <button className="btn btn-ghost normal-case text-sm">Home</button>
           </div>
         </Link>
         <Link to="/components">
           <div className="">
-            <a className="btn btn-ghost normal-case text-sm">Components</a>
+            <button className="btn btn-ghost normal-case text-sm">
+              Components
+            </button>
           </div>
         </Link>
         <Link to="/props">
           <div className="">
-            <a className="btn btn-ghost normal-case text-sm">Props</a>
+            <button className="btn btn-ghost normal-case text-sm">Props</button>
           </div>
         </Link>
         <Link to="/state">
           <div className="">
-            <a className="btn btn-ghost normal-case text-sm">State</a>
+            <button className="btn btn-ghost normal-case text-sm">State</button>
           </div>
         </Link>
         <Link to="/hooks">
           <div className="">
-            <a className="btn btn-ghost normal-case text-sm">Hooks</a>
+            <button className="btn btn-ghost normal-case text-sm">Hooks</button>
           </div>
         </Link>
         <Link to="/customhooks">
           <div className="">
-            <a className="btn btn-ghost normal-case text-sm">Custom Hooks</a>
+            <button className="btn btn-ghost normal-case text-sm">
+              Custom Hooks
+            </button>
           </div>
         </Link>
 
