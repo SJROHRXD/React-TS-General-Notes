@@ -1,34 +1,88 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <>
+      <div className="container">
+        <div className="">
+          <h1>Testing CSS Plugins</h1>
+          <button className="btn btn-primary">Button</button>
+          <button className="btn btn-secondary">Button</button>
+          <button className="btn btn-accent">Button</button>
+          <button className="btn btn-info">Button</button>
+          <button className="btn btn-success">Button</button>
+          <button className="btn btn-warning">Button</button>
+          <button className="btn btn-error">Button</button>
+          <button className="btn glass">Button</button>
+          <button className="btn rounded-full btn-ghost">Button</button>
+        </div>
+
+        <div className="mockup-code">
+          <pre data-prefix="$">
+            <code>npm i daisyui</code>
+          </pre>
+        </div>
+
+        <div className="mockup-code">
+          <pre data-prefix="$">
+            <code>npm i daisyui</code>
+          </pre>
+          <pre data-prefix=">" className="text-warning">
+            <code>installing...</code>
+          </pre>
+          <pre data-prefix=">" className="text-success">
+            <code>Done!</code>
+
+            <div className="mockup-code">
+              <pre data-prefix="1">
+                <code>npm i daisyui</code>
+              </pre>
+              <pre data-prefix="2">
+                <code>installing...</code>
+              </pre>
+              <pre data-prefix="3" className="bg-warning text-warning-content">
+                <code>Error!</code>
+              </pre>
+            </div>
+          </pre>
+        </div>
+        <div>
+          <textarea
+            className="textarea textarea-primary"
+            placeholder="Bio"
+          ></textarea>
+        </div>
+        <div className="rating gap-1">
+          <input
+            type="radio"
+            name="rating-3"
+            className="mask mask-heart bg-red-400"
+          />
+          <input
+            type="radio"
+            name="rating-3"
+            className="mask mask-heart bg-orange-400"
+            checked
+          />
+          <input
+            type="radio"
+            name="rating-3"
+            className="mask mask-heart bg-yellow-400"
+          />
+          <input
+            type="radio"
+            name="rating-3"
+            className="mask mask-heart bg-lime-400"
+          />
+          <input
+            type="radio"
+            name="rating-3"
+            className="mask mask-heart bg-green-400"
+          />
+        </div>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </div>
-  )
+    </>
+  );
 }
 
-export default App
+export default App;
